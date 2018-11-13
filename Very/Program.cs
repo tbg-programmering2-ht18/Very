@@ -13,7 +13,7 @@ namespace banken
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Vällkommen till banken!");
+            Console.WriteLine("Vällkommen till banken!"); //Skriver ut alternativ för banken
             Console.WriteLine("");
             Console.WriteLine("Ange vilket av följande alternativ önskar du göra.");
             Console.WriteLine("");
@@ -27,31 +27,33 @@ namespace banken
             Console.WriteLine("");
             Console.WriteLine("Skriv ditt val: ");
 
+            int val = 0;
+
             try
             {
-                int val = int.Parse(Console.ReadLine());
+                val = int.Parse(Console.ReadLine());
             }
 
             catch(FormatException e)
             {
-                Console.WriteLine(e.Message)
+                Console.WriteLine(e.Message);
             }
 
             while (val != 7)
             {
-
                 switch (val)
                 {
                     case 1:
-                        AddCustomer();
+                        AddCustomer(); //Lägger till en användare
                         break;
                     case 2:
-                        RemoveCustomer();
+                        RemoveCustomer(); //Tar bort en användare
                         break;
                     case 3:
                         foreach (customer info in customerList)
                         {
-                            Console.WriteLine(info.CustomerInfo());
+                            Console.WriteLine(info.CustomerInfo()); //Visar alla användare
+                            string.mydoc jhjhjh
                         }
 
                         break;
@@ -72,7 +74,7 @@ namespace banken
                         Console.WriteLine("Default case");
                         break;
                 }
-                Console.WriteLine("Skriv ditt val: ");
+                Console.WriteLine("Skriv ditt val: "); //Tar in vad du skriver som val
                 val = int.Parse(Console.ReadLine());
 
             }
