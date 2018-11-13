@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace banken
 {
@@ -53,7 +54,7 @@ namespace banken
                         foreach (customer info in customerList)
                         {
                             Console.WriteLine(info.CustomerInfo()); //Visar alla användare
-                            string.mydoc jhjhjh
+                            string.mydoc //Filhantering
                         }
 
                         break;
